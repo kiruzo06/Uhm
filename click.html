@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+       #btn{
+           background-color: cyan;
+           color: black;
+           font-size: 100px;;
+           font-family: Sans-Serif;
+           font-size: bold;
+           padding: 20px;
+           border: ridge;
+           border-radius:70px;
+
+       }
+       form{
+           display:grid;
+           margin-top: 500px;
+           margin-right:100px ;
+           margin-left:100px;
+       }
+    </style>
+</head>
+ <body style="background-color: white">
+  <form>
+   <button id="btn" onclick="Change(this)">
+            Click me
+   </button>
+  </form>
+     
+  <script>
+         function Change(btn){
+           btn.innerHTML ="I love You";
+           btn.style.backgroundColor="pink";
+           btn.style.color="#b30059";
+           btn.style.fontSize="100px";
+           btn.style.fontFamily="Sans-Serif";
+           btn.style.padding="20px";
+           btn.style.border="ridge";
+           btn.style.borderRadius="70px";
+           btn.style.animation="bounce 0.5s";
+           btn.style.borderColor="#b30059";
+         }
+  </script>
+<style>
+      @keyframes bounce {
+        0%   { transform: scale(1); }
+        50%  { transform: scale(1.2); }
+        100% { transform: scale(1); }
+      }
+    </style>
+</body>
+</html>
